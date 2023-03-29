@@ -1,0 +1,562 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="QuickSigth_IniciarSesion" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_strNombreCuentaQuickSigth" Type="InArgument(x:String)" />
+    <x:Property Name="in_strURLQuickSight" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1176,3950</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>QuickSigth_IniciarSesion_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Net</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="68">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>OfficeDevPnP.Core</AssemblyReference>
+      <AssemblyReference>UiPathTeam.SharePoint</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="QuickSigth_IniciarSesion" sap:VirtualizedContainerService.HintSize="1186,3885" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="QuickSigth_IniciarSesión" Name="nomMod" />
+      <Variable x:TypeArguments="x:String" Name="strUsername" />
+      <Variable x:TypeArguments="ss:SecureString" Name="strPassword" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1144,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;-[&quot;+nomMod+&quot;] - Iniciando Secuencia&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <Sequence DisplayName="Obtener Credenciales " sap:VirtualizedContainerService.HintSize="1144,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="passwordstring" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;-[&quot;+nomMod+&quot;] - Obteniendo Credenciales QuickSigth&quot;]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Credenciales_QuickSigth" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[strPassword]" Username="[strUsername]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:GetRobotCredential>
+      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[passwordstring]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[new System.Net.NetworkCredential(string.Empty, strPassword).Password]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[passwordstring]" />
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1144,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Apertura de navegador e Iniciar sesión en QuickSight&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <Sequence DisplayName="Validación Inicio Sesión" sap:VirtualizedContainerService.HintSize="1144,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="booLoginExist" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[booLoginExist]" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+        <ui:UiElementExists.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4b871561-4b7b-4e3f-b4ce-44eebfaf7cd5" InformativeScreenshot="23f263939621ed9603636412ab351a7d" Selector="&lt;html app='chrome.exe' title='Home' /&gt;&lt;webctrl aaname='QuickSight' parentid='application-header' tag='DIV' innertext='QuickSight' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:UiElementExists.Target>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:UiElementExists>
+      <If Condition="[booLoginExist]" sap:VirtualizedContainerService.HintSize="484,391" sap2010:WorkflowViewState.IdRef="If_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="421,204" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="L3_Interacciones\QuickSigth\QuickSigth_CerrarSesion.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="L3_Interacciones\QuickSigth\QuickSigth_CerrarSesion.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Chrome QuickSight Sign-In" sap:VirtualizedContainerService.HintSize="1144,3308" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="96a7df95-fc89-4412-9ecb-4df118cda49f" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1110,3092" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="booCuentaExist" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1068,51" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Ingresando cuenta en QuickSigth&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <Sequence DisplayName="Inicio Sesión" sap:VirtualizedContainerService.HintSize="1068,2907" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Boolean" Name="booDashboardExist" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Validar campo cuenta" sap:VirtualizedContainerService.HintSize="1026,1144" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[booCuentaExist]" sap:VirtualizedContainerService.HintSize="984,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                  <ui:UiElementExists.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c33eb19e-6d4d-4690-a5f3-32b95dfc56ac" InformativeScreenshot="cc75e29a262855b97cb06214d8acb094" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' innertext='QuickSight account nameQuickSight account name' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:UiElementExists.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:UiElementExists>
+                <If Condition="[booCuentaExist]" sap:VirtualizedContainerService.HintSize="984,904" sap2010:WorkflowViewState.IdRef="If_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="376,310" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'QuickSight account name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="96a7df95-fc89-4412-9ecb-4df118cda49f" Text="[in_strNombreCuentaQuickSigth + &quot;[k(enter)]&quot;]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://us-east-1.quicksight.aws.amazon.com/sn/auth/signin?redirect_uri=https%3A%2F%2Fus-east-1.quicksight.aws.amazon.com%2Fsn%2Fstart%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue" ContentHash="vVoBXZSDNUmd6EJukwT1IQ" DesignTimeRectangle="531, 379, 267, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Type Into 'QuickSight account name''" FullSelectorArgument="&lt;webctrl id='account-name-input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-name-input' tag='INPUT' type='text' class='MuiInputBase-input-217 MuiOutlinedInput-input-204 MuiInputBase-inputAdornedEnd-222 MuiOutlinedInput-inputAdornedEnd-208 MuiInputBase-inputMarginDense-218 MuiOutlinedInput-inputMarginDense-205' aaname='QuickSight account name' /&gt;" Guid="f63019a6-3e4b-42b3-b4c1-b94768810410" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQ8AAAAcCAYAAAB/Gjq/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7d3dCYMwAIXRzOMKUvrQwXRJR3COlBQbLPQnvc/nwAVxgI/Yh6bUk33f67qudZqmWkoxM/u8oxuPcMzzXJdlqdu2HW8B3uvxaCeOFg6AET0e7VPFiQMY1ePRvmEARokHEBmOx+V6O54AxAMIiQcQEQ8gIh5ARDyAiHgAEfEAIuIBRMQDiIgHEBEPICIeQEQ8gIh4ABHxACLD8QA4Ew8g0ovhD5CBf/R4uHoB+EePx/PSpxYRJxDgl5cfOlpA2unDdZNm9n2l3gHcjnLMug/1nQAAAABJRU5ErkJggg==" InformativeScreenshot="93a1a002581423a67fcb211e8780aa51.png" IsResponsive="True" Reference="BQJGGof-SEikOhsikJG42A/CRpks6OhJ0GEKi2SIl0dNA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='QuickSight Sign-In' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="531, 363, 128, 11" ElementType="Text" FriendlyName="'Type Into 'QuickSight account name''" FullSelectorArgument="&lt;webctrl id='account-name-input-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-name-input-label' tag='LABEL' type='' class='MuiFormLabel-root-193 MuiInputLabel-root-185 MuiInputLabel-formControl-187 MuiInputLabel-shrink-189 MuiInputLabel-marginDense-188 MuiInputLabel-outlined-192 Mui-focused Mui-focused' aaname='QuickSight account name' check:innerText='QuickSight account name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIQAAAAPCAYAAAAlM2e8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK7SURBVFhH7Za9SgNBFIV9MbHwFUTwBVS0FEVLBTsRO8VSsfKnUkv1DbRNlzJlupQr35Kznr2ZXaImJsJ8sEz2zv2bmZNJFopMxsiCyNTIgsjUyILI1BgRxPnFZbG4tFw+K6trRbfbHc408/7+URweHReDwWBoqcP849Pz8O2Lfr9frG9uV/XkQw8pf4e+rq5vhm91iKXmvMN+sVb2YV6oBEFzHKofBJu+vrE1lijaaBIEm/HTg8uCmA6VINjA1LccO03D3f1D1Twjdvw5nJfXt9IOHIh/610QjNwKvV6vrJc6OHJJhIzcVOTC32vyGZvmsHtt9e1g07x6AvqIcX6DMfJODdX0HNhv7x7KEVywjMwphloxT9yHpvVBag3RX3seY8H3KNatBIGTkjsUOjk9KxOOIwgKxAbUHKM2G4jjsN0GEgQ5yKWmPTfzfnuRQ36q1QY5iGEd5NjdO6jWBrG2IEb7hD9x6rVJEMRojdi1n95DBL+m9QmPd3/eEbD69FhG2VP1Jy6IVOO87+zujwhFUNf/r0gQXhtiTf/JoIbqki/2IIjTjaOaqbXH2kB91uAbqFr4td0QvIP78cQDER4Pvj7m4hrcP+b1WOy6HTxe1H4ycI64/TeCQL3xW+iQQwcwLUEQ7weqg/pPgmhag/vHvIqF1Pk43/pT6cnww5845iUI5mUX2LRxcU6QIwqCBelKBo/HltowUK2I1/DcPJP4ySA3nwE/HpikILA3rWEcQfi5pagEATjh7FeKFg8U1VVFcYoSg12CAOweTzPKw2dydDqdWi2/uiQIwF8++HvNJkGoT3wj6o3fWD9A+lMdxSmP/NlgHv3R5FFN8F45dPXHqDr07jeJ6noeaFtfag3uT258UoIAxfNEcdQEEcFRhxYbngX0oMPKTIdWQcwaF2RKzZnJM9eCyPw1RfEJcwLLmo0hfn4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Validar Cuenta si es SURA" sap:VirtualizedContainerService.HintSize="563,745" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="strCuenta" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'B'" sap:VirtualizedContainerService.HintSize="521,51" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="14ef9903-7bfd-4114-a759-1e65fe9e8b54" InformativeScreenshot="4718fdbb942a924fb824eb5a1599fdb6" Selector="&lt;webctrl tag='B' aaname='*' innertext='*' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[strCuenta]</OutArgument>
+                        </ui:GetValue.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:GetValue>
+                      <If Condition="[strCuenta.Equals(&quot;sura&quot;)]" sap:VirtualizedContainerService.HintSize="521,560" sap2010:WorkflowViewState.IdRef="If_4">
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,401" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  go-back-link'" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d37b22e9-3506-465b-8cf1-fe51366fda56" InformativeScreenshot="f402a891fee47c0a9a3162fb206a6aab" Selector="&lt;webctrl id='go-back-link' tag='BUTTON' aaname='Change account name' innertext='Change account name' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'QuickSight account name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="96a7df95-fc89-4412-9ecb-4df118cda49f" Text="[in_strNombreCuentaQuickSigth + &quot;[k(enter)]&quot;]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://us-east-1.quicksight.aws.amazon.com/sn/auth/signin?redirect_uri=https%3A%2F%2Fus-east-1.quicksight.aws.amazon.com%2Fsn%2Fstart%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue" ContentHash="wYcp-dFYqUexKU4peXAsGw" DesignTimeRectangle="531, 379, 267, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Type Into 'QuickSight account name'2'" FullSelectorArgument="&lt;webctrl id='account-name-input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-name-input' tag='INPUT' type='text' class='MuiInputBase-input-217 MuiOutlinedInput-input-204 MuiInputBase-inputAdornedEnd-222 MuiOutlinedInput-inputAdornedEnd-208 MuiInputBase-inputMarginDense-218 MuiOutlinedInput-inputMarginDense-205' aaname='QuickSight account name' /&gt;" Guid="f63019a6-3e4b-42b3-b4c1-b94768810410" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQ8AAAAcCAYAAAB/Gjq/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADOSURBVHhe7d3dCYMwAIXRzOMKUvrQwXRJR3COlBQbLPQnvc/nwAVxgI/Yh6bUk33f67qudZqmWkoxM/u8oxuPcMzzXJdlqdu2HW8B3uvxaCeOFg6AET0e7VPFiQMY1ePRvmEARokHEBmOx+V6O54AxAMIiQcQEQ8gIh5ARDyAiHgAEfEAIuIBRMQDiIgHEBEPICIeQEQ8gIh4ABHxACLD8QA4Ew8g0ovhD5CBf/R4uHoB+EePx/PSpxYRJxDgl5cfOlpA2unDdZNm9n2l3gHcjnLMug/1nQAAAABJRU5ErkJggg==" InformativeScreenshot="93a1a002581423a67fcb211e8780aa51.png" IsResponsive="True" Reference="BQJGGof-SEikOhsikJG42A/SV66Ey1z7EWrLRLVxt8aDQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='QuickSight Sign-In' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="531, 363, 128, 11" ElementType="Text" FriendlyName="'Type Into 'QuickSight account name'2'" FullSelectorArgument="&lt;webctrl id='account-name-input-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-name-input-label' tag='LABEL' type='' class='MuiFormLabel-root-193 MuiInputLabel-root-185 MuiInputLabel-formControl-187 MuiInputLabel-shrink-189 MuiInputLabel-marginDense-188 MuiInputLabel-outlined-192 Mui-focused Mui-focused' aaname='QuickSight account name' check:innerText='QuickSight account name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIQAAAAPCAYAAAAlM2e8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK7SURBVFhH7Za9SgNBFIV9MbHwFUTwBVS0FEVLBTsRO8VSsfKnUkv1DbRNlzJlupQr35Kznr2ZXaImJsJ8sEz2zv2bmZNJFopMxsiCyNTIgsjUyILI1BgRxPnFZbG4tFw+K6trRbfbHc408/7+URweHReDwWBoqcP849Pz8O2Lfr9frG9uV/XkQw8pf4e+rq5vhm91iKXmvMN+sVb2YV6oBEFzHKofBJu+vrE1lijaaBIEm/HTg8uCmA6VINjA1LccO03D3f1D1Twjdvw5nJfXt9IOHIh/610QjNwKvV6vrJc6OHJJhIzcVOTC32vyGZvmsHtt9e1g07x6AvqIcX6DMfJODdX0HNhv7x7KEVywjMwphloxT9yHpvVBag3RX3seY8H3KNatBIGTkjsUOjk9KxOOIwgKxAbUHKM2G4jjsN0GEgQ5yKWmPTfzfnuRQ36q1QY5iGEd5NjdO6jWBrG2IEb7hD9x6rVJEMRojdi1n95DBL+m9QmPd3/eEbD69FhG2VP1Jy6IVOO87+zujwhFUNf/r0gQXhtiTf/JoIbqki/2IIjTjaOaqbXH2kB91uAbqFr4td0QvIP78cQDER4Pvj7m4hrcP+b1WOy6HTxe1H4ycI64/TeCQL3xW+iQQwcwLUEQ7weqg/pPgmhag/vHvIqF1Pk43/pT6cnww5845iUI5mUX2LRxcU6QIwqCBelKBo/HltowUK2I1/DcPJP4ySA3nwE/HpikILA3rWEcQfi5pagEATjh7FeKFg8U1VVFcYoSg12CAOweTzPKw2dydDqdWi2/uiQIwF8++HvNJkGoT3wj6o3fWD9A+lMdxSmP/NlgHv3R5FFN8F45dPXHqDr07jeJ6noeaFtfag3uT258UoIAxfNEcdQEEcFRhxYbngX0oMPKTIdWQcwaF2RKzZnJM9eCyPw1RfEJcwLLmo0hfn4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+              <Sequence DisplayName="Ingreso Usuario" sap:VirtualizedContainerService.HintSize="1026,401" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Ingresando usuario en QuickSigth&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Private: Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="96a7df95-fc89-4412-9ecb-4df118cda49f" Text="[strUsername+ &quot;[k(enter)]&quot;]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://us-east-1.quicksight.aws.amazon.com/sn/auth/signin?redirect_uri=https%3A%2F%2Fus-east-1.quicksight.aws.amazon.com%2Fsn%2Fstart%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue" ContentHash="WnKgrTMfMUWDwmQuT5X78A" DesignTimeRectangle="531, 415, 320, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Private Type Into 'Username''" FullSelectorArgument="&lt;webctrl id='username-input' tag='INPUT' aaname='Username' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username-input' tag='INPUT' aaname='Username' type='text' class='MuiInputBase-input-212 MuiOutlinedInput-input-199 MuiInputBase-inputMarginDense-213 MuiOutlinedInput-inputMarginDense-200' /&gt;" Guid="c15c4d11-9feb-4340-b785-eb6c1e66da75" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUQAAAAcCAYAAAAZQMboAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVHhe7d3BDYMwFERB10MLFAdNUgJ1OFr0gyAKDeAZaS8h5ydzwa0DcBBEgHIL4r7vfV3XPk1Tb62Zmb1yaVxal+ZdnUHMg3me+7Isfdu2+hXgfdK4tC7Nu0bxDGJqmT8AjOK3e2cQc4R0MgRGkualfV9nEPNeDTCaa/sEERiaIAIUQQQogghQBBGgCCJAEUSAIogARRABiiACFEEEKIIIUAQRoAgiQBFEgPI3iD4QC4zm8QOxrhAARvN4hcD3kqn8wUkReLM0Lq17vGQq8iC1zBEy79VmZm9cGpfWXWMYtyACjEwQAQ69fwDcrlZMbxYZmQAAAABJRU5ErkJggg==" InformativeScreenshot="a799db3c99e15d5200a254adec14ce59.png" IsResponsive="True" Reference="BQJGGof-SEikOhsikJG42A/YkAx0lKwykSm8nVjipsGSA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='QuickSight Sign-In' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="531, 401, 50, 11" ElementType="Text" FriendlyName="'Private Type Into 'Username''" FullSelectorArgument="&lt;webctrl id='username-input-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username-input-label' tag='LABEL' type='' class='MuiFormLabel-root-188 MuiInputLabel-root-180 MuiInputLabel-formControl-182 MuiInputLabel-shrink-184 MuiInputLabel-marginDense-183 MuiInputLabel-outlined-187 Mui-focused Mui-focused' aaname='Username' check:innerText='Username' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAPCAYAAACvMDy4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE5SURBVEhL7ZIxTsNAEEVzMZSCK6BIuQBC4hQgpYsiOqKUICoQVZJrJEdw6XTuXA56hm99LwFtSlt+0sre2T+z83d3EgNlNNY3hm+sqqp4Xm+iruufSMThcGxifWQ0xvrt3X1cTa/j4XHR6Bj8E2MNDby8vsX7x2cTp4bPFYOiKOJmNv83n/pleWr3Vi6c60lkG+PrRYEGaA74Mge0ygOfo1uunjr7ALW3u33z73piMu25DDQ6DM+HbGP8c7oy4qeloVNzw+Bz1rkN7UN95Wsv13vDnsu6bjvNh44xGtMJgBsDCqL5fh7lL73INUbDapp1dJBr7NzNi9YYAhr1Iswp7BDHrIxJ7+Qao47qU+eSG9OLSfsTrTFIn5c3zaZp/C99rjFiek6cPjrIMQaez3CTHWNDYjTWLyK+AD7lyN9cvyLCAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+              </Sequence>
+              <Sequence DisplayName="Ingreso Contraseña" sap:VirtualizedContainerService.HintSize="1026,688" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Ingresando Contraseña en QuickSigth&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Private: Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="96a7df95-fc89-4412-9ecb-4df118cda49f" SecureText="[strPassword]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://us-east-1.signin.aws/platform/login?workflowStateHandle=0ede1da2-2b1f-441f-b83e-e90bf6a31748" ContentHash="emYxnTVft02JpRqVOqVnkA" DesignTimeRectangle="546, 448, 290, 30" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'Private Type Into 'Password''" FullSelectorArgument="&lt;webctrl id='awsui-input-0' tag='INPUT' aaname='Password' /&gt;" FuzzySelectorArgument="&lt;webctrl id='awsui-input-0' tag='INPUT' aaname='Password' type='password' class='awsui-input awsui-input-type-password awsui-input-valid' /&gt;" Guid="a60f3ae6-02bd-486b-bbdf-15ab2a42e435" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASYAAAAiCAYAAADyInR4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEnSURBVHhe7d0xagJRGIXRlEGUlG7NxsWFxIBtdiBWalyBVmnsUlrYvPgPZEgwrXqLc+Ay8IZpP6Z7Dw0gTBemw/HUpst9G8+37eF5ZWZ201V7qkHVoj5Mk8WuezmYbS4+MDO79gav6+5ZLerD9PT20YbnF++fX90hwC1Ve4bnH6NqUenC9FMtgHv53SFhAiIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuIIExBHmIA4wgTEESYgjjABcYQJiCNMQBxhAuJchKmu5R3NNq4IB+6i2jOarf9eET5Z7Nrjy+p8uOmrZWZ2q1WQqkHVoj5Mh+OpTZf7Np5v//3IzOyaq/ZUg6pFfZgAcrT2DfLPxzQW46iwAAAAAElFTkSuQmCC" InformativeScreenshot="aea2c5e7143501170a9105b7cc80d72c.png" Reference="BQJGGof-SEikOhsikJG42A/0DYzhSmJlEymQHVu5pVIjQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Web Services (AWS)' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="546, 423, 60, 20" ElementType="Text" FriendlyName="'Private Type Into 'Password''" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='awsui-form-field-label' aaname='Password' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANPSURBVFhH7VY9ayJRFN1fMWDlDxCm0TRJmoQUWWwGm8FmSLNhi4BFli2yWEgsthUhECGQQCCCYMDCxUJJoaQZ0gw2iY1amWqsxu7sfR8zzkw0aLbajAeG59z3ce8979w7fkHEsSFAjpHFhgA5RhYbAuQYCdgvj+i+TOWbgI+AV7TzOrSMfI7OcF6poTuR058AZjkOpfwk3wQCBNSP4tCKLXR7xFTvAfWigURMw6Ull/znWIkA4/5VvjNM0czRpqJvkzOFPerDfHmF7Uibhxmfs0a0JjC3zL4eHHsMyxq/fwaLzzfvTAawKFZm+gABctP3FlglWJUdKFuaKJE0/VZ1UsdMLJw84Ec6jmRalNDh1gmabNNCu1RbdSz2EqxyCkqsgK4bvE37Yl+F+pwB7nKubw3JWAoaJeIundx/g3J0i3pZJ8W6SY7p8liM+8LvLot5XQLsR5wfxKG7gToyWY4Z2j/nB/IgJFF+LLMPqwYF3ZD2Me4yO0hupVAyuQFOrwDl4Aosf6uiQcne4llMAaMGjtUUznsiHu4jZqDUY+qYwSFm7D+nlHwBbZsvIUwD8bp4Q0CCMcVuOLPP2UzmGhj6JMXg2NM3knJ6v5FQKYjOAJ5PwjI7RjXosVM0mXHSgJGpoVnVsVfp82mTFCF+93FJl2Dcz9XCyO/mybcsTUHABSR3hOC8i9VKoEqBUoLi8d84JWNeQadb2uYEMSkGDxx2LnC8S1Im2R1XnryEF9vp1rNx/OiQn86ZSNa6wh6pYsiTlvLHE0rkZ2FpSgW9JUDkEk72Qz1gjj5KKgt4TsqiAxkcqvtfdGssOT/Cdl4G+RaaeVf6lKx6hrZZgyblL8rjgwrIP3p9guEfCRA34RHg0Hr2hXAPDPSHAa4paJ7oMjsDKwNVw+GB2/xE4HrW8EqBgROVpgRdSdE+gxphsAf4CaAeQKpKqCeoj6R/u4/rBapYgwDgmQJJkOPt9D6SmQIui+RYHvh8wzqwKI9tUkoy1yIpL7cLiDKYN0MRuOJ2fw9j/ieNd3j+7MC46Qe/AiECGJlmxRBlSk8yW0CJzniHgBXBvrOh3jAHfe9Z7wg1zeX2NcF9iwa8MkL/C8JYn4BPhg0BcowsNgTIMbKIOAHAX8vFSnFXUTVhAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Dando click en Iniciar Sesión en QuickSigth&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <uix:NClick ClickType="Single" DisplayName="Click 'Click 'Sign in''" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="96a7df95-fc89-4412-9ecb-4df118cda49f" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://us-east-1.signin.aws/platform/login?workflowStateHandle=0ede1da2-2b1f-441f-b83e-e90bf6a31748" ContentHash="bAvx_WQzdk2BWXXUu-Z_cg" DesignTimeRectangle="667, 537, 47, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Click 'Sign in''" FullSelectorArgument="&lt;webctrl parentid='password-submit-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='password-submit-button' tag='SPAN' type='' class='' aaname='Sign in' check:innerText='Sign in' /&gt;" Guid="abe02443-2e75-410c-b672-f54d5279931a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAWCAYAAABtwKSvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJWSURBVFhH7VZNa+JQFJ2f0R/iP+gv6M5ld+5m1S6zG7cuuhBkCsPQTRaldtFOYaCBirYQChYCESUL6YjwoJIo+IFZnLl5eS950aRjqZ0JgxcOmHvfPcnJ/Yif9o5O8b9gJyav2InJK94o5gLH9w70WwOF1PiWUGnie7uLkzM9PZ6BpJiygVrHhbdEaEsf3thF/VLEGy8i4EJX87aM2kDchnVT41lQxOhE4gsWH3MSwkFXPVOcqT6hNVqA9W0Uo7zt4+B2iOfZFI/3N6nxLChiuuhxIQu0ZCU4dBTK4nf5CodnBkrfrpJtVrnDiRm03x32qRWLwZmvF4mcw2rQMhS7tlFv29D4tcKhoFD9iVKUQ74NORQxFiwuhqrrWChJASouh/CCA7MhNOErkI/xLGGimlGLRDkTPMv25bb60mJozoKf8JyH0LchR6LNJIk0jw2hn4s3HGBNjIEfY36UbvzE3+YXZxo6VsWA2sY0UTq3Yc24g3KaMbeCTDF/4EgugGBbtV/AEup9mhnRu2tiZGtOUJeVNF3uWa9MXE1dlDJ62BVkV+Z1jhUxMfZ1G62xWAhEchz4M8Uo2y2PYjhoFfP+lyRrpHLOfDxei5x8iHmAMZqixxiMtoN6h9F6DBPmAyvcXimk8Zz5YJTPxQf2b8U0YYhhVm0++gVNzkMK6d7RDWrOhD60tMVmLoxBxgL4u2JCyB0foFhJxjbB544QQ9VMi38kXp+ZDaDRw3sjF5bTh9GnCnEl2d+Qj8S7xRw0GJiYLW7LCVqNt/0N2RbeLSZP2InJJ07xGwbjCKX7cTJoAAAAAElFTkSuQmCC" InformativeScreenshot="78802e0b1f7c52a9d073747b82b259f0.png" Reference="BQJGGof-SEikOhsikJG42A/12Xq3_b_9USFCziHLkuPWQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Web Services (AWS)' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="546, 530, 290, 32" ElementType="Button" FriendlyName="'Click 'Sign in''" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='awsui-button awsui-button-variant-primary awsui-hover-child-icons' aaname='Sign in' check:innerText='Sign in' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASYAAAAkCAYAAAAke5dlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM/SURBVHhe7du9SiNRGMbxvQu9kNyBV2BnaZduG7VMt7YWFoLswrLYTCHGYl1hwQGDUQiBCIGIIYW4EhhQEgNGMcW7ZybnnXxN1l03xiHzf+CHOnPOWEQezjmJH4QQQmIWiokQEruExTS/+kXmDP8rAEyTdo8mLKa5ldHBADAtfgdpBlZMAPCeNBQTgNjQUEwAYkNDMQGIDQ3FBCA2NBQTgNjQUEwAYkNDMQGIDQ3FhCF7snZaE+fIlVTk/QnZOJFvpUvZ3HGi7yORNBRT0qy7sn3RkOazfeGfO9K8b0h2397P3dobDXGG507Q9o39Nd5l5H0kk4ZiShTHFELHvuIdeTSlFDA/VQt2zNa55O+exLuqyNLI/MlZPKrLdftBiqeHkfeRTBqKKVEupRq82k+S1xVSwJHUuv1+/bss77iS/vp9cCu3cSybBX+LdywLZru35I/5vDcwZ3nL35aZewcVyZYqkgl+7ntGn9TWT0mHc8y1VzwDs0dDMSVKWcr29fZqZUlrGfXbr0vTH9CuS8ZeS5lrXjDLxq6ywm1YOKcl17pFDDJcgD2Z2lMwolk76157xTMwezQUU6I4YSFoml5dnF278vGNFJMrP+6DoaZEzoNVzqfaQ/fCcDGJ2ZoVCpLerUi5HVwwc056z+4ztpj+4RmYPRqKKXH2ZK10K97AqqQj1YI96xkpJt3+tSSrK6xCI7gyumLqrbIcu8QKi2fI+BXT3z8Ds0dDMSXYglOR/L09DDeFsOZfH1tMfe/SUUx4IxqKKelyt93zIi2EkYLQc6mOFA/sHIoJb0RDMSXKmbh3D1L1PHFLNcleeHJtz3Eeb8rdd+EiCqJ3LtURz8wPiswPxYQJ01BMiXIirj3I7s/j3S/J6PlRREHMrx7Kdq0lTf/duHZD3Jsxh98UE/6ThmJKIP0MkW9pI3rMn3y8sMVkVllR94HX0lBMeFHGFFHzriHl2pW4V2blFPzF8PkiTJ6GYsKLFnOeePYsKshzS/I5/pUEk6ehmADEhoZiAhAbGooJQGxoKCYAsaGhmADEhoZiAhAbmrCY5iIGAcC0+B2k6a2YVqIHA8BUmA7ShMVULBYB4F1pwmIihJB4ROQ3HfRC47NtAlAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+              </Sequence>
+              <Sequence DisplayName="Validar Login" sap:VirtualizedContainerService.HintSize="1026,460" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[booDashboardExist]" sap:VirtualizedContainerService.HintSize="929,51" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                  <ui:UiElementExists.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fce38bef-d1aa-479a-8433-8f3986931b33" InformativeScreenshot="df75b5487c4dd6a4f3a3682e263c636e" Selector="&lt;webctrl aaname='QuickSight' parentid='application-header' tag='DIV' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:UiElementExists.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:UiElementExists>
+                <If Condition="[booDashboardExist]" sap:VirtualizedContainerService.HintSize="929,275" sap2010:WorkflowViewState.IdRef="If_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="442,84" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Error Iniciar Sesion" sap:VirtualizedContainerService.HintSize="442,116" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Throw Exception="[New BusinessRuleException(&quot;687_Biz_001 - Error al iniciar sesión, no fue posible encontrar el dashboard del aplicativo&quot;)]" sap:VirtualizedContainerService.HintSize="400,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="VT-rAscOKEKhUYg0U80mxQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABrSURBVDhPY2DY8fU2w/Yv/8nCIL1gBrkArHfoGrD9awNhA0CKsAGYZrwGwG1AA8iacRqAYgMSQNcMliekCAawaQbLgwkowGoDDnEYhhD4FOHRDMIQBgFF+DBWQVIwVkFSMFZBUjBl2fnrbQDqprA2X3dOTgAAAABJRU5ErkJggg==" InformativeScreenshot="abd11cf363cda8dafb2a119395ad55d4.jpg" Reference="BQJGGof-SEikOhsikJG42A/lZtX7EQtrkKyvhPXhhhX9g" Selector="&lt;html app='chrome.exe' title='QuickSight Sign-In' /&gt;" Url="https://us-east-1.quicksight.aws.amazon.com/sn/auth/signin?redirect_uri=https%3A%2F%2Fus-east-1.quicksight.aws.amazon.com%2Fsn%2Fstart%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1144,51" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;-[&quot;+nomMod+&quot;] - Finalizando Secuencia&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>

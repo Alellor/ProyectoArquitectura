@@ -1,0 +1,14 @@
+﻿{
+  "Id": "CRpks6OhJ0GEKi2SIl0dNA",
+  "Reference": "BQJGGof-SEikOhsikJG42A/CRpks6OhJ0GEKi2SIl0dNA",
+  "ParentRef": "BQJGGof-SEikOhsikJG42A/lZtX7EQtrkKyvhPXhhhX9g",
+  "Name": "Type Into 'QuickSight account name'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2023-03-20T19:10:24.9185082Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-03-20T19:10:24.9185082Z"
+}

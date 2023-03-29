@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="G2J_yDNcv0-6HNktdvTQzg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/3c42e4e5-a95e-421a-b929-d725a41e123b" DesignTimeRectangle="661, 169, 7, 17" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;span&amp;gt;svg&amp;gt;path' parentid='visual_controls_floating_container' tag='path' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl type='' parentid='visual_controls_floating_container' tag='path' class='' aaname='' /&gt;" Guid="f488d1c9-fc53-4896-9c6f-bd92950063f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAcAAAARCAYAAAAR3bZVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVChTpY7BDYQgFAUpBRuwOiqwC2vAswltGClArYCjCL7N+7vfk9HDvmSSgeGAwcPeY0oJzjl0XSeukxhCQNM0Al0ncds2tG0r0HV/fojz3mMYht/pu/cPxRivSNeZ8zxB5nnGuq7iyhXvMLVWkGVZBD0TU0rBNE2w1gp03kk8jgPjOF6RzkhMzhmk73uBjxWz7zvuyDnjAyIdqQhp5mr0AAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Insignias SOLO circular 050' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e19e5a9d82e87daf1c65a9c6d8ebf0cc.png" xmlns="">e19e5a9d82e87daf1c65a9c6d8ebf0cc.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

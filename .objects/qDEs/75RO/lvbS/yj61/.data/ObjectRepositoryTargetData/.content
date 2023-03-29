@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6ZOdTbvXXkSyyo9qOPLp5Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://us-east-1.quicksight.aws.amazon.com/sn/start?#" DesignTimeRectangle="1341, 87, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='MuiSvgIcon-root-107 VegaSvgIcon' aaname='' /&gt;" Guid="804ce47a-66dd-49a4-b286-0575150f028b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADWSURBVDhP7ZNdDYRADAZPzRpAAQZQgAEUoAAFGMAHBkABAsAAGOhlNldCwsfywL3dNZmktGWyP/AKIdg3+QvP5HluVVVFyNXMkaSwLEtb19U8yKmpWScpHMfRpmmKKwNyamrWuRW2bbs/kz8S9n1v8zxbURQRcmpq1kkKkWzb9jlBizk1NeskhZBlWbwIIFczR6SQVbC14w17UKN39QlJIQe/LIs1TbOvzqHG1odhOL0HUkjUdX2qO0gJ1bsUshrVA3qE6klh13XJ34weM6onhU/4OWGwNz4io5e1b/cPAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="79987c621fd2aa3e97a9d20411d48043.png" xmlns="">79987c621fd2aa3e97a9d20411d48043.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

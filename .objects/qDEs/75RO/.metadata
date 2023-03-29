@@ -1,0 +1,12 @@
+﻿{
+  "Id": "75ROGp995U61wx92qPAv2Q",
+  "Reference": "BQJGGof-SEikOhsikJG42A/75ROGp995U61wx92qPAv2Q",
+  "ParentRef": "BQJGGof-SEikOhsikJG42A/qDEsv0MRrkSTZVrkmgTu2Q",
+  "Name": "1.0.0",
+  "Type": "AppVersion",
+  "Created": "2023-03-20T19:09:59.3133594Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-03-20T19:09:59.3133594Z"
+}

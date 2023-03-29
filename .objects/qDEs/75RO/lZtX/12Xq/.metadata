@@ -1,0 +1,14 @@
+﻿{
+  "Id": "12Xq3_b_9USFCziHLkuPWQ",
+  "Reference": "BQJGGof-SEikOhsikJG42A/12Xq3_b_9USFCziHLkuPWQ",
+  "ParentRef": "BQJGGof-SEikOhsikJG42A/lZtX7EQtrkKyvhPXhhhX9g",
+  "Name": "Click 'Sign in'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Created": "2023-03-20T19:11:25.1939564Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-03-20T19:11:25.1939564Z"
+}

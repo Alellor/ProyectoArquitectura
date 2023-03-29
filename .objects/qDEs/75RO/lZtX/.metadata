@@ -1,0 +1,14 @@
+﻿{
+  "Id": "lZtX7EQtrkKyvhPXhhhX9g",
+  "Reference": "BQJGGof-SEikOhsikJG42A/lZtX7EQtrkKyvhPXhhhX9g",
+  "ParentRef": "BQJGGof-SEikOhsikJG42A/75ROGp995U61wx92qPAv2Q",
+  "Name": "Chrome QuickSight Sign-In",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2023-03-20T19:10:04.3670915Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-03-20T19:10:04.3670915Z"
+}

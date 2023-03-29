@@ -1,0 +1,14 @@
+﻿{
+  "Id": "82WM4Q8SGEyKVHc0c5TRYA",
+  "Reference": "BQJGGof-SEikOhsikJG42A/82WM4Q8SGEyKVHc0c5TRYA",
+  "ParentRef": "BQJGGof-SEikOhsikJG42A/75ROGp995U61wx92qPAv2Q",
+  "Name": "Chrome Insignias SOLO circular 050",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2023-03-20T19:14:14.45366Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-03-20T19:14:14.45366Z"
+}

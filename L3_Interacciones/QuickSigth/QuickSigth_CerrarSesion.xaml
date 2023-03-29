@@ -1,0 +1,159 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="QuickSigth_CerrarSesion" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="951,1092" sap2010:WorkflowViewState.IdRef="QuickSigth_CerrarSesion_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>OfficeDevPnP.Core</AssemblyReference>
+      <AssemblyReference>UiPathTeam.SharePoint</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="QuickSigth_CerrarSesion" sap:VirtualizedContainerService.HintSize="476,1027" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="QuickSigth_CerrarSesión" Name="nomMod" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;-[&quot;+nomMod+&quot;] - Iniciando Secuencia&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Home" sap:VirtualizedContainerService.HintSize="434,662" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="1f2487b4-1702-4486-92c9-7515a42397a9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,446" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Click 'SVG''" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1f2487b4-1702-4486-92c9-7515a42397a9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://us-east-1.quicksight.aws.amazon.com/sn/start?#" ContentHash="6ZOdTbvXXkSyyo9qOPLp5Q" DesignTimeRectangle="1341, 87, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Click 'SVG''" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='MuiSvgIcon-root-107 VegaSvgIcon' aaname='' /&gt;" Guid="804ce47a-66dd-49a4-b286-0575150f028b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADWSURBVDhP7ZNdDYRADAZPzRpAAQZQgAEUoAAFGMAHBkABAsAAGOhlNldCwsfywL3dNZmktGWyP/AKIdg3+QvP5HluVVVFyNXMkaSwLEtb19U8yKmpWScpHMfRpmmKKwNyamrWuRW2bbs/kz8S9n1v8zxbURQRcmpq1kkKkWzb9jlBizk1NeskhZBlWbwIIFczR6SQVbC14w17UKN39QlJIQe/LIs1TbOvzqHG1odhOL0HUkjUdX2qO0gJ1bsUshrVA3qE6klh13XJ34weM6onhU/4OWGwNz4io5e1b/cPAAAAAElFTkSuQmCC" InformativeScreenshot="79987c621fd2aa3e97a9d20411d48043.png" Reference="BQJGGof-SEikOhsikJG42A/yj61mfE8a06K6E8EnXCBmg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Click 'Cerrar sesión''" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1f2487b4-1702-4486-92c9-7515a42397a9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://us-east-1.quicksight.aws.amazon.com/sn/start?#" ContentHash="z-m7aAv6bE--4d9XEF01ig" DesignTimeRectangle="1065, 321, 293, 24" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'Click 'Cerrar sesión''" FullSelectorArgument="&lt;webctrl isleaf='1' tag='LI' aaname='Cerrar sesión' innertext='Cerrar sesión' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='LI' aaname='Cerrar sesión' innertext='Cerrar sesión' type='' class='MuiButtonBase-root-106 MuiListItem-root-273 MuiMenuItem-root-270 VegaMenuItem undefined MuiMenuItem-gutters-271 MuiListItem-dense-275 MuiMenuItem-dense-272 MuiListItem-gutters-278 MuiListItem-button-279' check:text='Cerrar sesión' /&gt;" Guid="e86a74db-b9e8-4a22-ace2-5b19d70fae3f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASkAAAAcCAYAAAA9WUkoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVVSURBVHhe7ZzpT1RXGIf5x5o2bdKk6Qe7EKuGQFtKtVoCsoikVUSQLWpppRJoEa11TWHYmZZAEyE6hYQmBJFtBhiWsRB2wvLpLb83OZM7w3WYQcEx+d3kyZ17znvOPXw4T9733htixsfHZWhoSHjw4MEjmg54CX7ySwpnQgiJFnZIamtrixBCogZKihAS1VBShJCohpIihEQ1lBQhJKqhpAghUQ0lFQabm5syPz8vy8vLtv2EkP1jz5La2NiQkZERefzYJa5/umV6ekY3s13sm8LU1LQ46hpkaWkpoL2//6lkZmXLzMxMQDshZP/Zk6SwWU+nZcqRY/HyQ+lPyrWy67K6umob/6YAGeVezJfnz//zt+FvqvylSoaHRwJiCSEHQ8SSWl1dk+KSK1JRWSXr6+u2MWifm5tTkHEF96NsWltb818jZnFxUTMxU1rNzs5qm3WcAZlO8L2t46xzA8yDdmu5Fireit1Yu/5QcxBC9k7EkkLciZPJ27HDtv1uj0eSU05LUfFlycg8q2dscJSGqWkZKrh33n1furt7pOzncrlytVTi4r+QnAt5KrWSy1fl1LcpcqmgWD765LA0NjXrvIhPz8iS787lSOzhozqfuSeEdaP6lpxKTtX5zp3P1bnQfu/+Q10v2hM+T9R5XhSPOXEPSAcxDke9fBp7RJK+/kbPWAvkhji0XcjN1/OxuATNLDGHWRMh5NUQsaSwQdPSzwSURAZs7NIfy8Tp/Euvl5aWJb+gSPqfDvg3NkoqbHT0Q1LXysplZWUlYB7Do0edcjGvQEsuyAWywTqD4yAVrClYnM+eDUpW9vd+eTx54lIp+Xw+23irpDAWsp2cnNQ+j2dMr3FGHH6bteBZVkpqurZb5yOEvDx7khQ2JDZmcB+khOzClIPXyys0S4JgrAIw8ZBUXX1DwBzoR8Zy5+59uf37Hc2wkIlhDvPbGg9MZoRMqb6hcbuMW9B2SAlirKj8VdeTf6lQ51hYWLCNt64RY633wxnXdn8LzrimpAh59QRIanjYvoSzAjklHT8pvb3/7uiDpPLyC/VtHzYuMGVXOJJCbMaZbG3zeiflwcM/wpIUQHY2MeGV6pu/qZiQ8UA0hUUlMrOdOZn1mOdcdvGhJIW/DWUhJUXIwQIvRSQpbO6bt27L+Zxc/ezAtKMkwwNwZE937z3wPzBHvPlcYTdJIcaUkhjX3vF3WJIy98DvYJngOdj4xIQ/FsIMFW/WaMq70VG3xg1u2xzlZrDM0EdJEbJ/+CU1sb2Rw5EUwDMkiOqDDw/JW2+/pxQUlqiozOcJeJiMDAVZl9vt2bGxQbCkICBkPmYsyjOwm6Q0A8s8q2PiExJ1DrwBhIxQOh76OFYSk05oX9WN6hfGW9eIsc4/2+Szo3Hy5VfH9YxrtFNShBwc8BL8FJGkDMhGsOGDxYGNjNf76DMZS7iYsZG+0jdrwVjMYe3DXBCJdZ2h4q2YsfzEgJDXw0tJihBC9psASbFcIYREG/CSSsrr9VJShJCoA16Cn1RSo6OjIZ/PEELIQQIfwUsqKXxZ7Xa7bd+eEULI6wA+gpfgJ5WUx+PR2s8umBBCDhr4CF5SSU1NTcnY2JgMDg5qeoVX8/jw0W4gIYTsF/AO/AMPwUfwEvwUg48wYS287uvr65Oenh7p6uqS9vZ2aW1tlcbGRqmrqxOHwyG1tbUB1NTUEELIrgS7Az6BV+AXeAa+gXfgH3jIfH4AP8XgPwPg4RTqv4GBAent7RWXyyWdnZ3S0dEhbW1t4nQ6paWlRZqbm5WmpiZCCIkY4xD4BF6BX+AZ+AbegX/gIfgIXvL5fPI/4dCpRIQuacYAAAAASUVORK5CYII=" InformativeScreenshot="3cd820f3d60bd96c6ae25ea5efcfab97.png" Reference="BQJGGof-SEikOhsikJG42A/_T8AXpM1xUagsvFsyXmwpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="860iF7bPpEaBn4t2kwkeAA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABrSURBVDhPY2DY8fU2w/Yv/8nCIL1gBrkArHfoGrD9awNhA0CKsAGYZrwGwG1AA8iacRqAYgMSQNcMliekCAawaQbLgwkowGoDDnEYhhD4FOHRDMIQBgFF+DBWQVIwVkFSMFZBUjBl2fnrbQDqprA2X3dOTgAAAABJRU5ErkJggg==" InformativeScreenshot="926bb1cbb938d1b5dc9eadbc26eba2a2.jpg" Reference="BQJGGof-SEikOhsikJG42A/lvbSDD8o3kKEG22zvOIsUA" Selector="&lt;html app='chrome.exe' title='Home' /&gt;" Url="https://us-east-1.quicksight.aws.amazon.com/sn/start?#" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:KillProcess AppliesTo="{x:Null}" Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:KillProcess>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;-[&quot;+nomMod+&quot;] - Finalizando Secuencia&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>

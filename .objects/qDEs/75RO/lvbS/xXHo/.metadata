@@ -1,0 +1,14 @@
+﻿{
+  "Id": "xXHopFCap0SIqwzOow_YBg",
+  "Reference": "BQJGGof-SEikOhsikJG42A/xXHopFCap0SIqwzOow_YBg",
+  "ParentRef": "BQJGGof-SEikOhsikJG42A/lvbSDD8o3kKEG22zvOIsUA",
+  "Name": "Click 'Paneles'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Created": "2023-03-20T19:13:13.7091231Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-03-20T19:13:13.7091231Z"
+}

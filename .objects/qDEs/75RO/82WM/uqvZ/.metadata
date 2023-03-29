@@ -1,0 +1,14 @@
+﻿{
+  "Id": "uqvZ3Bo5FEqSLg9iZMNtPA",
+  "Reference": "BQJGGof-SEikOhsikJG42A/uqvZ3Bo5FEqSLg9iZMNtPA",
+  "ParentRef": "BQJGGof-SEikOhsikJG42A/82WM4Q8SGEyKVHc0c5TRYA",
+  "Name": "Click 'unchecked'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2023-03-20T19:14:52.3886411Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-03-20T19:14:52.3886411Z"
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Id": "_T8AXpM1xUagsvFsyXmwpA",
+  "Reference": "BQJGGof-SEikOhsikJG42A/_T8AXpM1xUagsvFsyXmwpA",
+  "ParentRef": "BQJGGof-SEikOhsikJG42A/lvbSDD8o3kKEG22zvOIsUA",
+  "Name": "Click 'Cerrar sesión'",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2023-03-20T19:12:09.5198081Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-03-20T19:12:09.5198081Z"
+}
